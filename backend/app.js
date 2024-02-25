@@ -8,6 +8,7 @@ const session = require("express-session");
 const {instagramIdToUrlSegment, urlSegmentToInstagramId} = require('instagram-id-to-url-segment');
 const jwt = require("jsonwebtoken");
 const cors = require("cors");
+const path = require("path");
 app.use(
   session({
     secret: "your-secret-key",
