@@ -1,3 +1,3 @@
-const SERVER_URL = "https://insta-backend-vnb2.onrender.com/api";
+const SERVER_URL = "https://instagram-admin.onrender.com/api";
 
 export default SERVER_URL;

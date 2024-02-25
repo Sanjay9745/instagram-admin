@@ -25,6 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 //session
 app.use(express.static("public"));
+app.use(express.static(path.join(__dirname,'..','frontend','out')));
 //config mongoose
 mongoose.connect(process.env.MONGODB_URI).then(() => {
   console.log("connected to db");
@@ -306,6 +307,8 @@ function extractMediaIdFromUrl(url) {
   const match = url.match(/\/p\/([^/]+)/);
   return match ? match[1] : null;
 }
+
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 

@@ -6,7 +6,6 @@ import { useRouter } from 'next/navigation'
 
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
-
 function Page({params}:any) {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
